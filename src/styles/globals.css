@@ -74,6 +74,9 @@
 }
 
 * {
+  /* Quando há essa propriedade border-box ele irá contabilizar o tamanho da porta e o tamanho da div para fechar a conta, se tiver uma borda de 20 + um conteudo
+  de 200 px, ele irá considerar como se fosse os 160 do conteudo + 40 das bordas, agora se colocar como content-box, ele vai contabilizar a area de 200 + 40px fechando um total de 240 de area ocupada.
+  */
   box-sizing: border-box;
   padding: 0;
   margin: 0;
